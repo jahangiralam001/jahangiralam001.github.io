@@ -34,7 +34,7 @@ document.getElementById('scholarshipfee').innerHTML = " After 25% Scholarship no
 document.getElementById('firstpayment').innerHTML = "You need to pay " + result + " Taka before 18November,2020." ;
 
 
-document.getElementById('secondpayment').innerHTML = "You need to pay " + result + " Taka before 13December,2020.";
+document.getElementById('secondpayment').innerHTML = "You need to pay " + result + " Taka before 15December,2020.";
 document.getElementById('thirdpayment').innerHTML = "You need to pay " + result + " Taka before 11January,2020.";
 document.getElementById('lastpayment').innerHTML = "You need to pay " + result + " Taka before 7February,2020.";
 
