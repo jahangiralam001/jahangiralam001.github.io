@@ -35,7 +35,7 @@ function payment(){
 document.getElementById('totalfee').innerHTML = "Your tuition fee is "+ totalfee +" Taka. " ;
 
 
-document.getElementById('scholarshipfee').innerHTML = " After 50% Scholarship now your tuition fee is "+ scholarship +" Taka. " ;
+document.getElementById('scholarshipfee').innerHTML = " After 25% Scholarship now your tuition fee is "+ scholarship +" Taka. " ;
 
 document.getElementById('finalfee').innerHTML = "Your total payable fee is "+ resultsss +" Taka. " ;
 
