@@ -19,17 +19,25 @@ function payment(){
 
  var finalfee = parseFloat(resultss + results);
 
- var scholarship =  parseFloat((finalfee * 75)/100);
- 
- var result =  parseFloat((scholarship * 25)/100);
+ var scholarship =  parseFloat((totalfee * 75)/100);
 
+ var resultsss = parseFloat(scholarship + resultss);
+ 
+ var result =  parseFloat((resultsss * 25)/100);
+
+
+
+
+
+ 
  
 //Show the results
 document.getElementById('totalfee').innerHTML = "Your tuition fee is "+ totalfee +" Taka. " ;
-document.getElementById('finalfee').innerHTML = "Your total payable fee is "+ finalfee +" Taka. " ;
 
 
-document.getElementById('scholarshipfee').innerHTML = " After 25% Scholarship now your tuition fee is "+ scholarship +" Taka. " ;
+document.getElementById('scholarshipfee').innerHTML = " After 50% Scholarship now your tuition fee is "+ scholarship +" Taka. " ;
+
+document.getElementById('finalfee').innerHTML = "Your total payable fee is "+ resultsss +" Taka. " ;
 
 document.getElementById('firstpayment').innerHTML = "You need to pay " + result + " Taka before 18November,2020." ;
 
@@ -55,3 +63,4 @@ $(document).ready(function(){
         $(".test").show();
     });
 });
+
