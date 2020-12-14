@@ -24,10 +24,6 @@ function payment(){
  var result =  parseFloat((scholarship * 25)/100);
 
  
-
-
- 
- 
 //Show the results
 document.getElementById('totalfee').innerHTML = "Your tuition fee is "+ totalfee +" Taka. " ;
 document.getElementById('finalfee').innerHTML = "Your total payable fee is "+ finalfee +" Taka. " ;
@@ -59,4 +55,3 @@ $(document).ready(function(){
         $(".test").show();
     });
 });
-
