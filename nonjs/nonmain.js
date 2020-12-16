@@ -36,8 +36,8 @@ document.getElementById('firstpayment').innerHTML = "You need to pay " + result 
 
 
 document.getElementById('secondpayment').innerHTML = "You need to pay " + result + " Taka before 15December,2020.";
-document.getElementById('thirdpayment').innerHTML = "You need to pay " + result + " Taka before 11January,2020.";
-document.getElementById('lastpayment').innerHTML = "You need to pay " + result + " Taka before 7February,2020.";
+document.getElementById('thirdpayment').innerHTML = "You need to pay " + result + " Taka before 11January,2021.";
+document.getElementById('lastpayment').innerHTML = "You need to pay " + result + " Taka before 7February,2021.";
 
 
 
