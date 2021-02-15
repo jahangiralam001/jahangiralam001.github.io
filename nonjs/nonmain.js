@@ -32,12 +32,10 @@ document.getElementById('totalfee').innerHTML = "Your tuition fee is "+ totalfee
 
 document.getElementById('finalfee').innerHTML = "Your total payable fee is "+ finalfee +" Taka. " ;
 
-document.getElementById('firstpayment').innerHTML = "You need to pay " + result + " Taka before 18November,2020." ;
-
-
-document.getElementById('secondpayment').innerHTML = "You need to pay " + result + " Taka before 15December,2020.";
-document.getElementById('thirdpayment').innerHTML = "You need to pay " + result + " Taka before 14January,2021.";
-document.getElementById('lastpayment').innerHTML = "You need to pay " + result + " Taka before 7February,2021.";
+document.getElementById('firstpayment').innerHTML = "You need to pay " + result + " Taka before 22 March,2021." ;
+document.getElementById('secondpayment').innerHTML = "You need to pay " + result + " Taka before 20 April,2021.";
+document.getElementById('thirdpayment').innerHTML = "You need to pay " + result + " Taka before 19 May,2021.";
+document.getElementById('lastpayment').innerHTML = "You need to pay " + result + " Taka before 14 June,2021.";
 
 
 
