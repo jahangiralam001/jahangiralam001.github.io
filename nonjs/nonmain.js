@@ -1,34 +1,29 @@
+
 // function
 function payment(){
    
   //Question 1 
-  var credits = document.getElementById('Credits').value;
+  
   
     //Question 2 
-  var Creditsfee = document.getElementById('Creditsfee').value;
-
+  var tuitionfee = document.getElementById('tuitionfee').value;
+    
   var Trimesterfee = document.getElementById('Trimesterfee').value;
+
+ 
+ 
+ var results = parseFloat(tuitionfee.replace(/[^\d\.]/g, ""));
+
+ var resultss = parseFloat(Trimesterfee.replace(/[^\d\.]/g, ""));
+
+ var finalfee = parseFloat((resultss + results));
+
+ var result =  parseFloat(((finalfee)/4));
+
+
   
- 
-
- var totalfee = parseFloat(credits * Creditsfee);
- 
- var results = parseFloat(totalfee);
-
- var resultss = parseFloat(Trimesterfee);
-
- var finalfee = parseFloat(resultss + results);
-
- var result =  parseFloat((finalfee * 25)/100);
-
-
-
- 
-
- 
- 
 //Show the results
-document.getElementById('totalfee').innerHTML = "Your tuition fee is "+ totalfee +" Taka. " ;
+document.getElementById('totalfee').innerHTML = "Your tuition fee is "+ tuitionfee +" Taka. " ;
 
 document.getElementById('finalfee').innerHTML = "Your total payable fee is "+ finalfee +" Taka. " ;
 
@@ -39,14 +34,12 @@ document.getElementById('lastpayment').innerHTML = "You need to pay " + result +
 
 
 
-
-
-
-document.getElementById('Warning').innerHTML = "Warning!!!!If you pay after the date you will have to add 1000Tk late fee.";
+document.getElementById('Warning').innerHTML = "Warning!!!! If you pay after the date you will have to add 1000Tk late fee.";
 
 
   
 }
+
 // Display 
 $(document).ready(function(){
   
@@ -54,4 +47,6 @@ $(document).ready(function(){
         $(".test").show();
     });
 });
+
+
 
