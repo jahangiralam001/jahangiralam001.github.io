@@ -1,25 +1,21 @@
+
 // function
 function payment(){
    
   //Question 1 
-  var credits = document.getElementById('Credits').value;
   
-    //Question 2 
-  var Creditsfee = document.getElementById('Creditsfee').value;
-
+  
+  var tuitionfee = document.getElementById('tuitionfee').value;
+    
   var Trimesterfee = document.getElementById('Trimesterfee').value;
-  
+
+ var results = parseFloat(tuitionfee.replace(/[^\d\.]/g, ""));
+
+ var resultss = parseFloat(Trimesterfee.replace(/[^\d\.]/g, ""));
+
  
 
- var totalfee = parseFloat(credits * Creditsfee);
-
- var results = parseFloat(totalfee);
-
- var resultss = parseFloat(Trimesterfee);
-
- var finalfee = parseFloat(resultss + results);
-
- var scholarship =  parseFloat((totalfee * 50)/100);
+ var scholarship =  parseFloat((results * 50)/100);
 
  var resultsss = parseFloat(scholarship + resultss);
  
@@ -32,7 +28,7 @@ function payment(){
  
  
 //Show the results
-document.getElementById('totalfee').innerHTML = "Your tuition fee is "+ totalfee +" Taka. " ;
+document.getElementById('totalfee').innerHTML = "Your tuition fee is "+ tuitionfee +" Taka. " ;
 
 
 document.getElementById('scholarshipfee').innerHTML = " After 50% Scholarship now your tuition fee is "+ scholarship +" Taka. " ;
@@ -46,10 +42,7 @@ document.getElementById('lastpayment').innerHTML = "You need to pay " + result +
 
 
 
-
-
-
-document.getElementById('Warning').innerHTML = "Warning!!!!If you pay after the date you will have to add 1000Tk late fee.";
+document.getElementById('Warning').innerHTML = "Warning!!!! If you pay after the date you will need to add 1000Tk late fee.";
 
 
   
