@@ -23,11 +23,8 @@
  
 <!-- ======================================================================== --> 
 <section>
-	<p>Enter your credit :- </p>  
-	<input type="textfield" id="Credits">
-
-	<p>Enter your credit fee:- </p>  
-	<input type="textfield" id="Creditsfee">
+		<p>Enter your tuition fee:- </p>  
+	<input type="textfield" id="tuitionfee">
 
 
 	<p>Enter your trimester fee:- </p>  
@@ -62,9 +59,60 @@
 </section>
     <footer>
 
-        <p id="footer">© Copyright 2021. All Rights Reserved | Learners Guide <i aria-hidden="true" class="fa fa-heart-o" style="color: red;"> ☄ </i>  Developed by <a style=" color: white;" href="https://www.facebook.com/profile.php?id=100015711601985"> <u> Md.Jahangir Alam</u></a></p>
+        <p id="footer">© Copyright 2021. All Rights Reserved | Tecknow Squad <i aria-hidden="true" class="fa fa-heart-o" style="color: red;"> ☄ </i>  Developed by <a style=" color: white;" href="https://www.facebook.com/profile.php?id=100015711601985"> Md.Jahangir Alam</a></p>
 
     </footer>
 <script src="25js/25main.js"></script>
+<script type="text/javascript">
+	"use strict";
+
+function NumericInput(inp, locale) {
+  var numericKeys = '0123456789';
+
+  // restricts input to numeric keys 0-9
+  inp.addEventListener('keypress', function(e) {
+    var event = e || window.event;
+    var target = event.target;
+
+    if (event.charCode == 0) {
+      return;
+    }
+
+    if (-1 == numericKeys.indexOf(event.key)) {
+      // Could notify the user that 0-9 is only acceptable input.
+      event.preventDefault();
+      return;
+    }
+  });
+
+  // add the thousands separator when the user blurs
+  inp.addEventListener('blur', function(e) {
+    var event = e || window.event;
+    var target = event.target;
+
+    var tmp = target.value.replace(/,/g, '');
+    var val = Number(tmp).toLocaleString(locale);
+
+    if (tmp == '') {
+      target.value = '';
+    } else {
+      target.value = val;
+    }
+  });
+
+  // strip the thousands separator when the user puts the input in focus.
+  inp.addEventListener('focus', function(e) {
+    var event = e || window.event;
+    var target = event.target;
+    var val = target.value.replace(/[,.]/g, '');
+
+    target.value = val;
+  });
+}
+
+var text = new NumericInput(document.getElementById('tuitionfee'));
+var textDe = new NumericInput(document.getElementById('Trimesterfee'));
+
+</script>
 </body>
 </html>
