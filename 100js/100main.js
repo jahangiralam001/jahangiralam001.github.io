@@ -21,7 +21,7 @@ document.getElementById('firstpayment').innerHTML = "You need to pay " + finalfe
 document.getElementById('lastpayment').innerHTML = "This is your last and final payment for this trimester.";
 
 
-document.getElementById('Warning').innerHTML = "Warning!!!!If you pay after the date you will have to add 1000Tk late fee.";
+document.getElementById('Warning').innerHTML = "Warning!!!!If you pay after the date you will need to add 1000Tk late fee.";
 
 
   
