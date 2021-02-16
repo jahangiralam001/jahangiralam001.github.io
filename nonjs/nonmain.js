@@ -47,6 +47,3 @@ $(document).ready(function(){
         $(".test").show();
     });
 });
-
-
-
