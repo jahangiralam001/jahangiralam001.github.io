@@ -35,7 +35,7 @@ document.getElementById('scholarshipfee').innerHTML = " After 25% Scholarship no
 document.getElementById('finalfee').innerHTML = "Your total payable fee is "+ resultsss +" Taka. " ;
 
 document.getElementById('firstpayment').innerHTML = "You need to pay " + result + " Taka before 22 March,2021." ;
-document.getElementById('secondpayment').innerHTML = "You need to pay " + result + " Taka before 20 April,2021.";
+document.getElementById('secondpayment').innerHTML = "You need to pay " + result + " Taka before 29 April,2021.";
 document.getElementById('thirdpayment').innerHTML = "You need to pay " + result + " Taka before 19 May,2021.";
 document.getElementById('lastpayment').innerHTML = "You need to pay " + result + " Taka before 14 June,2021.";
 
