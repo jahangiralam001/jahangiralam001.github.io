@@ -37,7 +37,7 @@ document.getElementById('finalfee').innerHTML = "Your total payable fee is "+ re
 
 document.getElementById('firstpayment').innerHTML = "You need to pay " + result + " Taka before 22 March,2021." ;
 document.getElementById('secondpayment').innerHTML = "You need to pay " + result + " Taka before 29 April,2021.";
-document.getElementById('thirdpayment').innerHTML = "You need to pay " + result + " Taka before 19 May,2021.";
+document.getElementById('thirdpayment').innerHTML = "You need to pay " + result + " Taka before 27 May,2021.";
 document.getElementById('lastpayment').innerHTML = "You need to pay " + result + " Taka before 14 June,2021.";
 
 
