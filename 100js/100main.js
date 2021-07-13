@@ -15,7 +15,7 @@ function payment(){
 //Show the results
 
 
-document.getElementById('firstpayment').innerHTML = "You need to pay " + finalfee + " Taka before 18 July,2021." ;
+document.getElementById('firstpayment').innerHTML = "You need to pay " + finalfee + " Taka before 29 July,2021." ;
 
 
 document.getElementById('lastpayment').innerHTML = "This is your last and final payment for this trimester.";
