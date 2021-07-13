@@ -27,7 +27,7 @@ document.getElementById('totalfee').innerHTML = "Your tuition fee is "+ tuitionf
 
 document.getElementById('finalfee').innerHTML = "Your total payable fee is "+ finalfee +" Taka. " ;
 
-document.getElementById('firstpayment').innerHTML = "You need to pay " + result + " Taka before 18 July,2021." ;
+document.getElementById('firstpayment').innerHTML = "You need to pay " + result + " Taka before 29 July,2021." ;
 document.getElementById('secondpayment').innerHTML = "You need to pay " + result + " Taka before 17 August,2021.";
 document.getElementById('thirdpayment').innerHTML = "You need to pay " + result + " Taka before 16 Spetember,2021.";
 document.getElementById('lastpayment').innerHTML = "You need to pay " + result + " Taka before 13 October,2021.";
